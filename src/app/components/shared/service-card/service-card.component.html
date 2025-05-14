@@ -1,0 +1,11 @@
+<div class="storybook-service-card">
+  <div class="storybook-service-card__inner">
+    <div class="storybook-service-card__inner--logo">
+      <img [src]="logoUrl()" alt="" />
+    </div>
+    <div class="storybook-service-card__inner--title">{{ title() }}</div>
+    <div class="storybook-service-card__inner--description">
+      <app-paragraph [paragraphText]="description()"></app-paragraph>
+    </div>
+  </div>
+</div>

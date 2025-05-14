@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-body);
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight-normal);
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  font-family: var(--secondary-font);
+}
+
+:root {
+  /* Base Colors */
+  --color-background: #f9f9f9;
+  --color-surface: #ffffff;
+
+  /* Primary/Secondary UI */
+  --color-primary: #2980b9;
+  --color-secondary: #27ae60;
+  --color-light: #ffffff;
+  --color-dark: #000;
+
+  /* Navigation */
+  --color-nav-link: #3498db;
+  --color-nav-link-hover: #2980b9;
+
+  /* font-family */
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Playfair Display", serif;
+
+  /* font-weight */
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+
+  /* font-size */
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-heading: 24px;
+  --font-size-xl: 35px;
+  --font-size-xxl: 40px;
+
+  /* font-color */
+  --color-heading-main: #2c3e50;
+  --color-heading-sub: #7f8c8d;
+  --color-text-body: #2e2e2e;
+  --color-text-light: #95a5a6;
+  --color-text-light-80: rgba(149, 165, 166, 0.8);
+
+  /* card styles */
+  --card-bg-color: #ffffff;
+  --card-border-color: #e0e0e0;
+  --card-shadow-color: rgba(0, 0, 0, 0.08);
+}

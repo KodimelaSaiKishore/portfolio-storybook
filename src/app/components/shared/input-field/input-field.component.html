@@ -1,0 +1,15 @@
+<div
+  class="input-field"
+  [ngStyle]="{
+    width: computedWidth()
+  }"
+>
+  <label for="#">{{ title() }}</label>
+  <input
+    type="{{ type() }}"
+    placeholder="{{ placeholder() }}"
+    [ngStyle]="{
+      height: computedHeight()
+    }"
+  />
+</div>

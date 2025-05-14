@@ -1,0 +1,46 @@
+.storybook-project-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  background-image: url("https://picsum.photos/200");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 300px;
+  height: 300px;
+
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.015);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px;
+    background-color: var(--color-text-light-80);
+    border-radius: 10px;
+
+    &--title {
+      font-family: var(--primary-font);
+      font-size: var(--font-size-lg);
+      color: var(--color-heading-main);
+      font-weight: var(--font-weight-bold);
+    }
+
+    &--techStack {
+      font-family: var(--secondary-font);
+      font-size: var(--font-size-base);
+      color: var(--color-text-body);
+      font-weight: var(--font-weight-normal);
+    }
+  }
+}

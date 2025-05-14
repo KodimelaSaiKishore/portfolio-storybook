@@ -1,0 +1,12 @@
+<button
+  type="button"
+  (click)="buttonClicked($event)"
+  class="storybook-button storybook-button--{{ type() }}"
+  [ngStyle]="{
+    width: computedWidth(),
+    height: computedHeight()
+  }"
+  title="{{ title() }}"
+>
+  {{ title() }}
+</button>

@@ -1,0 +1,13 @@
+<button
+  type="button"
+  (click)="onLinkClicked($event)"
+  class="storybook-linkButton"
+  title="{{ title() }}"
+  [ngStyle]="{
+    color: isActive() ? 'var(--color-nav-link)' : '',
+    fontSize: fontSize()
+  }"
+  [attr.aria-label]="title()"
+>
+  {{ title() }}
+</button>

@@ -1,0 +1,26 @@
+<div class="hero-section">
+  <div class="hero-section--image">
+    <img [src]="heroImage()" [alt]="heroTitle()" />
+  </div>
+  <div>
+    <app-section-header
+      [title]="heroTitle()"
+      [description]="heroRole()"
+    ></app-section-header>
+  </div>
+
+  <div>
+    <app-paragraph [paragraphText]="heroBio()"></app-paragraph>
+  </div>
+
+  <div class="hero-section--button">
+    <app-button
+      [title]="buttonData.title"
+      [type]="buttonData.type"
+      [width]="buttonData.width"
+      [height]="buttonData.height"
+      [widthUnits]="buttonData.widthUnits"
+      [heightUnits]="buttonData.heightUnits"
+    ></app-button>
+  </div>
+</div>

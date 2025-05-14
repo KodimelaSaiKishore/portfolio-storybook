@@ -1,0 +1,16 @@
+<div
+  class="text-area-field"
+  [ngStyle]="{
+    width: computedWidth()
+  }"
+>
+  <label for="#">{{ title() }}</label>
+  <textarea
+    type="text"
+    placeholder="{{ placeholder() }}"
+    [ngStyle]="{
+      height: computedHeight()
+    }"
+    style="resize: none"
+  ></textarea>
+</div>

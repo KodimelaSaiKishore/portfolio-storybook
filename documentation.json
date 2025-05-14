@@ -1,0 +1,1369 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AboutSectionComponent",
+            "id": "component-AboutSectionComponent-37c7a81632dc0c5496eb661482db2ba98c590ba285fa7ed705e47c87eb19d4215443265ef1c9bfddee6f1644e911ecaf0df734c6be14d6402ca220bb395dc5ae",
+            "file": "src/app/components/pages/about-section/about-section.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-about-section",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./about-section.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "buttonData",
+                    "defaultValue": "{\r\n    title: 'Download Resume',\r\n    type: 'primary',\r\n    width: '200',\r\n    widthUnits: 'px',\r\n    height: '50',\r\n    heightUnits: 'px',\r\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "paragraphText",
+                    "defaultValue": "[\r\n    `I am a passionate software developer with a love for creating innovative solutions. I enjoy working with the latest technologies and continuously learning to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.`,\r\n    `I am a passionate software developer with a love for creating innovative solutions. I enjoy working with the latest technologies and continuously learning to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.`,\r\n    `I am a passionate software developer with a love for creating innovative solutions. I enjoy working with the latest technologies and continuously learning to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.`,\r\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "sectionDescription",
+                    "defaultValue": "'Get to know me better!'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "sectionTitle",
+                    "defaultValue": "'About Me'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "SectionHeaderComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ParagraphComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { SectionHeaderComponent } from '../../shared/section-header/section-header.component';\r\nimport { ParagraphComponent } from '../../shared/paragraph/paragraph.component';\r\nimport { ButtonComponent } from '../../shared/button/button.component';\r\n\r\n@Component({\r\n  selector: 'app-about-section',\r\n  standalone: true,\r\n  imports: [SectionHeaderComponent, ParagraphComponent, ButtonComponent],\r\n  templateUrl: './about-section.component.html',\r\n  styleUrl: './about-section.component.less',\r\n})\r\nexport class AboutSectionComponent {\r\n  sectionTitle = 'About Me';\r\n  sectionDescription = 'Get to know me better!';\r\n  paragraphText = [\r\n    `I am a passionate software developer with a love for creating innovative solutions. I enjoy working with the latest technologies and continuously learning to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.`,\r\n    `I am a passionate software developer with a love for creating innovative solutions. I enjoy working with the latest technologies and continuously learning to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.`,\r\n    `I am a passionate software developer with a love for creating innovative solutions. I enjoy working with the latest technologies and continuously learning to improve my skills. In my free time, I like to explore new programming languages and frameworks, as well as contribute to open-source projects.`,\r\n  ];\r\n\r\n  buttonData: {\r\n    title: string;\r\n    type: any;\r\n    width: string;\r\n    widthUnits: any;\r\n    height: string;\r\n    heightUnits: any;\r\n  } = {\r\n    title: 'Download Resume',\r\n    type: 'primary',\r\n    width: '200',\r\n    widthUnits: 'px',\r\n    height: '50',\r\n    heightUnits: 'px',\r\n  };\r\n}\r\n",
+            "styleUrl": "./about-section.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"about-section\">\r\n  <app-section-header\r\n    [title]=\"sectionTitle\"\r\n    [description]=\"sectionDescription\"\r\n  ></app-section-header>\r\n\r\n  <div class=\"about-section__content\">\r\n    <app-paragraph [paragraphText]=\"paragraphText[0]\"></app-paragraph>\r\n    <app-paragraph [paragraphText]=\"paragraphText[1]\"></app-paragraph>\r\n    <app-paragraph [paragraphText]=\"paragraphText[2]\"></app-paragraph>\r\n  </div>\r\n\r\n  <div class=\"about-section__button\">\r\n    <app-button\r\n      [title]=\"buttonData.title\"\r\n      [type]=\"buttonData.type\"\r\n      [width]=\"buttonData.width\"\r\n      [height]=\"buttonData.height\"\r\n      [widthUnits]=\"buttonData.widthUnits\"\r\n      [heightUnits]=\"buttonData.heightUnits\"\r\n    ></app-button>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-049e156dcfe1d735385b6f9050f4798f8a145aa0691d90f9155034f3d9fa18f34188d79823a5fb6a913bea934a022b93e0d1fd7ae75e7565e56f6da3fd9ea466",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'portfolio-storybook'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "NavBarComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "HeroSectionComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "AboutSectionComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ContactSectionComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "FooterComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { RouterOutlet } from '@angular/router';\r\nimport { NavBarComponent } from './components/pages/nav-bar/nav-bar.component';\r\nimport { HeroSectionComponent } from './components/pages/hero-section/hero-section.component';\r\nimport { AboutSectionComponent } from './components/pages/about-section/about-section.component';\r\nimport { ContactSectionComponent } from './components/pages/contact-section/contact-section.component';\r\nimport { FooterComponent } from './components/pages/footer/footer.component';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  standalone: true,\r\n  imports: [\r\n    NavBarComponent,\r\n    HeroSectionComponent,\r\n    AboutSectionComponent,\r\n    ContactSectionComponent,\r\n    FooterComponent,\r\n  ],\r\n  templateUrl: './app.component.html',\r\n  styleUrl: './app.component.less',\r\n})\r\nexport class AppComponent {\r\n  title = 'portfolio-storybook';\r\n}\r\n",
+            "styleUrl": "./app.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div>\r\n  <app-nav-bar></app-nav-bar>\r\n\r\n  <div class=\"project-body\">\r\n    <app-hero-section></app-hero-section>\r\n    <app-about-section></app-about-section>\r\n    <app-contact-section></app-contact-section>\r\n  </div>\r\n\r\n  <app-footer></app-footer>\r\n</div>\r\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-a2aa9cb6aeb84d9c0af528de34735495d6bded34bf5ed4e3910bd44f21003d65a642c7be418da5811a6f9f30cc78abbfa75838e0f89d4ca446d31189e159ddc3",
+            "file": "src/app/components/shared/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "computedHeight",
+                    "defaultValue": "computed(() => this.height() + this.heightUnits())",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "computedWidth",
+                    "defaultValue": "computed(() => this.width() + this.widthUnits())",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "height",
+                    "defaultValue": "input<string>('32')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "heightUnits",
+                    "defaultValue": "input<'px' | '%' | 'rem' | 'em'>('px')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "input<string>('Button')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "input<'primary' | 'secondary'>('primary')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "width",
+                    "defaultValue": "input<string>('130')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "widthUnits",
+                    "defaultValue": "input<'px' | '%' | 'rem' | 'em'>('px')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "buttonClicked",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport {\r\n  Component,\r\n  computed,\r\n  EventEmitter,\r\n  input,\r\n  Input,\r\n  Output,\r\n  signal,\r\n} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button',\r\n  standalone: true,\r\n  imports: [CommonModule],\r\n  templateUrl: './button.component.html',\r\n  styleUrl: './button.component.less',\r\n})\r\nexport class ButtonComponent {\r\n  title = input<string>('Button');\r\n  type = input<'primary' | 'secondary'>('primary');\r\n  width = input<string>('130');\r\n  widthUnits = input<'px' | '%' | 'rem' | 'em'>('px');\r\n  height = input<string>('32');\r\n  heightUnits = input<'px' | '%' | 'rem' | 'em'>('px');\r\n\r\n  @Output() onClick = new EventEmitter<Event>();\r\n\r\n  computedWidth = computed(() => this.width() + this.widthUnits());\r\n  computedHeight = computed(() => this.height() + this.heightUnits());\r\n\r\n  buttonClicked(event: Event) {\r\n    event.stopPropagation();\r\n    this.onClick.emit(event);\r\n  }\r\n}\r\n",
+            "styleUrl": "./button.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<button\r\n  type=\"button\"\r\n  (click)=\"buttonClicked($event)\"\r\n  class=\"storybook-button storybook-button--{{ type() }}\"\r\n  [ngStyle]=\"{\r\n    width: computedWidth(),\r\n    height: computedHeight()\r\n  }\"\r\n  title=\"{{ title() }}\"\r\n>\r\n  {{ title() }}\r\n</button>\r\n"
+        },
+        {
+            "name": "ContactSectionComponent",
+            "id": "component-ContactSectionComponent-69d7a4a0be462fb9c9028a0edc9f363700b264ffff757c88a6978b706dc786fe69f135ac9f4ce58e26b1b2194cc62a589c22c777f2ed5223e54d62074b6d35ab",
+            "file": "src/app/components/pages/contact-section/contact-section.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-contact-section",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./contact-section.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "buttonData",
+                    "defaultValue": "{\r\n    title: 'Get In Touch',\r\n    type: 'primary',\r\n    width: '200',\r\n    widthUnits: 'px',\r\n    height: '50',\r\n    heightUnits: 'px',\r\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "description",
+                    "defaultValue": "input<string>('Lets Work together')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "input<string>('Get In Touch')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "SectionHeaderComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, input } from '@angular/core';\r\nimport { ParagraphComponent } from '../../shared/paragraph/paragraph.component';\r\nimport { SectionHeaderComponent } from '../../shared/section-header/section-header.component';\r\nimport { ButtonComponent } from '../../shared/button/button.component';\r\n\r\n@Component({\r\n  selector: 'app-contact-section',\r\n  standalone: true,\r\n  imports: [SectionHeaderComponent, ButtonComponent],\r\n  templateUrl: './contact-section.component.html',\r\n  styleUrl: './contact-section.component.less',\r\n})\r\nexport class ContactSectionComponent {\r\n  title = input<string>('Get In Touch');\r\n  description = input<string>('Lets Work together');\r\n\r\n  buttonData: {\r\n    title: string;\r\n    type: any;\r\n    width: string;\r\n    widthUnits: any;\r\n    height: string;\r\n    heightUnits: any;\r\n  } = {\r\n    title: 'Get In Touch',\r\n    type: 'primary',\r\n    width: '200',\r\n    widthUnits: 'px',\r\n    height: '50',\r\n    heightUnits: 'px',\r\n  };\r\n}\r\n",
+            "styleUrl": "./contact-section.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"contact-section\">\r\n  <app-section-header\r\n    [title]=\"title()\"\r\n    [description]=\"description()\"\r\n  ></app-section-header>\r\n\r\n  <app-button\r\n    [title]=\"buttonData.title\"\r\n    [type]=\"buttonData.type\"\r\n    [width]=\"buttonData.width\"\r\n    [height]=\"buttonData.height\"\r\n    [widthUnits]=\"buttonData.widthUnits\"\r\n    [heightUnits]=\"buttonData.heightUnits\"\r\n  ></app-button>\r\n</div>\r\n"
+        },
+        {
+            "name": "FooterComponent",
+            "id": "component-FooterComponent-053ef785b5b8851a306d4a9ba49e015444adfb9a3a4573d1394ae8b99843e223c2602f33688b4bbf0e7f4c568756a1d1fec213466079d9e98d65f28863fe211e",
+            "file": "src/app/components/pages/footer/footer.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-footer",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./footer.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-footer',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './footer.component.html',\r\n  styleUrl: './footer.component.less'\r\n})\r\nexport class FooterComponent {\r\n\r\n}\r\n",
+            "styleUrl": "./footer.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p>footer works!</p>\r\n"
+        },
+        {
+            "name": "HeroSectionComponent",
+            "id": "component-HeroSectionComponent-5ddc0705b1031915fd6d149a4bb99a8b3470bd64727e3951009b3dcedf5abb650aab70bc819d9f36adb75dc7301974bf320659fcf1d647ecf2245370f8342a3f",
+            "file": "src/app/components/pages/hero-section/hero-section.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-hero-section",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./hero-section.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "buttonData",
+                    "defaultValue": "{\r\n    title: 'Contact Me',\r\n    type: 'primary',\r\n    width: '200',\r\n    widthUnits: 'px',\r\n    height: '50',\r\n    heightUnits: 'px',\r\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "heroBio",
+                    "defaultValue": "signal<string>(`As a passionate frontend developer with 4+ years of experience, I thrive on\r\n    crafting responsive, user-friendly web experiences that blend performance\r\n    with aesthetics. With expertise in Angular,React, HTML, CSS, and LESS, and a\r\n    solid grasp of React fundamentals, I enjoy transforming complex requirements\r\n    into seamless digital interfaces. I’m driven by the challenge of delivering\r\n    high-impact features in dynamic startup environments and take pride in\r\n    building products that truly resonate with users.`)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "heroImage",
+                    "defaultValue": "signal<string>('https://picsum.photos/600')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "heroRole",
+                    "defaultValue": "signal<string>('Frontend Engineer')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "heroTitle",
+                    "defaultValue": "signal<string>('Sai Kishore')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "ParagraphComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "SectionHeaderComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, signal } from '@angular/core';\r\nimport { ParagraphComponent } from '../../shared/paragraph/paragraph.component';\r\nimport { ButtonComponent } from '../../shared/button/button.component';\r\nimport { SectionHeaderComponent } from '../../shared/section-header/section-header.component';\r\n\r\n@Component({\r\n  selector: 'app-hero-section',\r\n  standalone: true,\r\n  imports: [ParagraphComponent, ButtonComponent, SectionHeaderComponent],\r\n  templateUrl: './hero-section.component.html',\r\n  styleUrl: './hero-section.component.less',\r\n})\r\nexport class HeroSectionComponent {\r\n  heroTitle = signal<string>('Sai Kishore');\r\n  heroRole = signal<string>('Frontend Engineer');\r\n  heroImage = signal<string>('https://picsum.photos/600');\r\n  heroBio =\r\n    signal<string>(`As a passionate frontend developer with 4+ years of experience, I thrive on\r\n    crafting responsive, user-friendly web experiences that blend performance\r\n    with aesthetics. With expertise in Angular,React, HTML, CSS, and LESS, and a\r\n    solid grasp of React fundamentals, I enjoy transforming complex requirements\r\n    into seamless digital interfaces. I’m driven by the challenge of delivering\r\n    high-impact features in dynamic startup environments and take pride in\r\n    building products that truly resonate with users.`);\r\n\r\n  buttonData: {\r\n    title: string;\r\n    type: any;\r\n    width: string;\r\n    widthUnits: any;\r\n    height: string;\r\n    heightUnits: any;\r\n  } = {\r\n    title: 'Contact Me',\r\n    type: 'primary',\r\n    width: '200',\r\n    widthUnits: 'px',\r\n    height: '50',\r\n    heightUnits: 'px',\r\n  };\r\n}\r\n",
+            "styleUrl": "./hero-section.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"hero-section\">\r\n  <div class=\"hero-section--image\">\r\n    <img [src]=\"heroImage()\" [alt]=\"heroTitle()\" />\r\n  </div>\r\n  <div>\r\n    <app-section-header\r\n      [title]=\"heroTitle()\"\r\n      [description]=\"heroRole()\"\r\n    ></app-section-header>\r\n  </div>\r\n\r\n  <div>\r\n    <app-paragraph [paragraphText]=\"heroBio()\"></app-paragraph>\r\n  </div>\r\n\r\n  <div class=\"hero-section--button\">\r\n    <app-button\r\n      [title]=\"buttonData.title\"\r\n      [type]=\"buttonData.type\"\r\n      [width]=\"buttonData.width\"\r\n      [height]=\"buttonData.height\"\r\n      [widthUnits]=\"buttonData.widthUnits\"\r\n      [heightUnits]=\"buttonData.heightUnits\"\r\n    ></app-button>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "InputFieldComponent",
+            "id": "component-InputFieldComponent-bce72472ff3e41dfd0890293d3ba772f41fee470701f2c9907692003a5e6734bc648d361b8a05987335137d0f14e6e68cabac61040e05b9987da0b95c97253f8",
+            "file": "src/app/components/shared/input-field/input-field.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-input-field",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./input-field.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-input-field',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './input-field.component.html',\r\n  styleUrl: './input-field.component.less'\r\n})\r\nexport class InputFieldComponent {\r\n\r\n}\r\n",
+            "styleUrl": "./input-field.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p>input-field works!</p>\r\n"
+        },
+        {
+            "name": "LinksComponent",
+            "id": "component-LinksComponent-645087d1b934fc0ca41ef58c1d2cc336b77bfa3032e22f0504c664e6aec62c03d6cb50f4a9975c95eee38289b45c407ca42f885c16278649807df548f0a4a710",
+            "file": "src/app/components/shared/links/links.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-nav-links",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./links.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "isActive",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17,
+                    "required": false
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "fontSize",
+                    "defaultValue": "input<string>('16px')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "hyperLink",
+                    "defaultValue": "input<string>('/')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "isActive",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17,
+                    "required": false
+                },
+                {
+                    "name": "linkClicked",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "router",
+                    "defaultValue": "inject(Router)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "input<string>('Link')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onLinkClicked",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { Component, EventEmitter, inject, input } from '@angular/core';\r\nimport { Router } from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-nav-links',\r\n  standalone: true,\r\n  imports: [CommonModule],\r\n  templateUrl: './links.component.html',\r\n  styleUrl: './links.component.less',\r\n})\r\nexport class LinksComponent {\r\n  router: any = inject(Router);\r\n\r\n  title = input<string>('Link');\r\n  hyperLink = input<string>('/');\r\n  isActive = input<boolean>(false);\r\n  fontSize = input<string>('16px');\r\n\r\n  linkClicked = new EventEmitter();\r\n\r\n  onLinkClicked(event: Event) {\r\n    event.stopPropagation();\r\n    this.linkClicked.emit()\r\n    this.router.navigate(['/', this.hyperLink]);\r\n  }\r\n}\r\n",
+            "styleUrl": "./links.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<button\r\n  type=\"button\"\r\n  (click)=\"onLinkClicked($event)\"\r\n  class=\"storybook-linkButton\"\r\n  title=\"{{ title() }}\"\r\n  [ngStyle]=\"{\r\n    color: isActive() ? 'var(--color-nav-link)' : '',\r\n    fontSize: fontSize()\r\n  }\"\r\n  [attr.aria-label]=\"title()\"\r\n>\r\n  {{ title() }}\r\n</button>\r\n"
+        },
+        {
+            "name": "NavBarComponent",
+            "id": "component-NavBarComponent-309ac8660e0e3dd4a05be049bde89db32695068f37b706602e73645b10954aae4911212b00e6cd4c2673e1904835ac737f96290f6d2ad5d527850637cc237af4",
+            "file": "src/app/components/pages/nav-bar/nav-bar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-nav-bar",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./nav-bar.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "fontSize",
+                    "defaultValue": "'20px'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "navItems",
+                    "defaultValue": "signal<{ title: string; hyperLink: string; isActive: boolean }[]>([\r\n    { title: 'Home', hyperLink: '/home', isActive: true },\r\n    { title: 'About', hyperLink: '/about', isActive: false },\r\n    { title: 'Contact', hyperLink: '/contact', isActive: false },\r\n  ])",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "routeChanged",
+                    "args": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "LinksComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, signal } from '@angular/core';\r\nimport { LinksComponent } from '../../shared/links/links.component';\r\n\r\n@Component({\r\n  selector: 'app-nav-bar',\r\n  standalone: true,\r\n  imports: [LinksComponent],\r\n  templateUrl: './nav-bar.component.html',\r\n  styleUrl: './nav-bar.component.less',\r\n})\r\nexport class NavBarComponent {\r\n  fontSize: string = '20px';\r\n  navItems = signal<{ title: string; hyperLink: string; isActive: boolean }[]>([\r\n    { title: 'Home', hyperLink: '/home', isActive: true },\r\n    { title: 'About', hyperLink: '/about', isActive: false },\r\n    { title: 'Contact', hyperLink: '/contact', isActive: false },\r\n  ]);\r\n\r\n  routeChanged(index: number) {\r\n    this.navItems().forEach((item, i) => {\r\n      item.isActive = i === index;\r\n    });\r\n  }\r\n}\r\n",
+            "styleUrl": "./nav-bar.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"nav-bar\">\r\n  <div class=\"nav-bar__inner\">\r\n    @for (link of navItems(); track $index) {\r\n    <app-nav-links\r\n      [title]=\"link.title\"\r\n      [hyperLink]=\"link.hyperLink\"\r\n      [isActive]=\"link.isActive\"\r\n      (linkClicked)=\"routeChanged($index)\"\r\n      [fontSize]=\"fontSize\"\r\n    ></app-nav-links>\r\n    }\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "ParagraphComponent",
+            "id": "component-ParagraphComponent-818a43f4ef99c9a67986755ce4558367b05f74dd81e8858c978fd737036365a399bc06a629375077dbf87dd75d6181d2040388caa45eb4911a9d78021211028d",
+            "file": "src/app/components/shared/paragraph/paragraph.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-paragraph",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./paragraph.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "alignment",
+                    "defaultValue": "input<'start' | 'end' | 'center'>('center')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "paragraphText",
+                    "defaultValue": "input<string>('Test Paragraph Text')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-paragraph',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './paragraph.component.html',\r\n  styleUrl: './paragraph.component.less',\r\n})\r\nexport class ParagraphComponent {\r\n  paragraphText = input<string>('Test Paragraph Text');\r\n  alignment = input<'start' | 'end' | 'center'>('center');\r\n}\r\n",
+            "styleUrl": "./paragraph.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"story-book__paragraph\" [style]=\"{ 'text-align': alignment() }\">\r\n  {{ paragraphText() }}\r\n</div>\r\n"
+        },
+        {
+            "name": "ProjectsCardComponent",
+            "id": "component-ProjectsCardComponent-7dfeb0bda81917e20e4c39cb6d664f04399f13cf7099bd81999ed1d2e079a1c8444b3c676f965ad162a0670b23c541d6c864042f52d93406997607dd8df1501e",
+            "file": "src/app/components/shared/projects-card/projects-card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-projects-card",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./projects-card.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "imageUrl",
+                    "defaultValue": "input<string>('https://picsum.photos/200')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "projectLink",
+                    "defaultValue": "input<string>('https://google.com')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "projectTitle",
+                    "defaultValue": "input<string>('Project Title')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "technologyUsed",
+                    "defaultValue": "input<string>(\r\n    'This is a short description of the project. It gives an overview of what the project is about and its main features.'\r\n  )",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onCardClick",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-projects-card',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './projects-card.component.html',\r\n  styleUrl: './projects-card.component.less',\r\n})\r\nexport class ProjectsCardComponent {\r\n  imageUrl = input<string>('https://picsum.photos/200');\r\n  projectTitle = input<string>('Project Title');\r\n  technologyUsed = input<string>(\r\n    'This is a short description of the project. It gives an overview of what the project is about and its main features.'\r\n  );\r\n  projectLink = input<string>('https://google.com');\r\n\r\n  onCardClick() {\r\n    window.open(this.projectLink(), '_blank');\r\n  }\r\n}\r\n",
+            "styleUrl": "./projects-card.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"storybook-project-card\" (click)=\"onCardClick()\">\r\n  <div class=\"storybook-project-card__inner\">\r\n    <div class=\"storybook-project-card__inner--title\">{{ projectTitle() }}</div>\r\n    <div class=\"storybook-project-card__inner--techStack\">\r\n      {{ technologyUsed() }}\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "SectionHeaderComponent",
+            "id": "component-SectionHeaderComponent-e216c0a42f4077036d89222b7600d54416eb81644c03148d1c271d61171c89565b265b8b44aebe7adc53a3140d61b2fc49219e40f316373fe033e7b80368caa0",
+            "file": "src/app/components/shared/section-header/section-header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-section-header",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./section-header.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "description",
+                    "defaultValue": "input<string>('This is a section header component.')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "input<string>('Section Header')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-section-header',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './section-header.component.html',\r\n  styleUrl: './section-header.component.less',\r\n})\r\nexport class SectionHeaderComponent {\r\n  title = input<string>('Section Header');\r\n  description = input<string>('This is a section header component.');\r\n}\r\n",
+            "styleUrl": "./section-header.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"storybook-section-header\">\r\n  <p class=\"storybook-section-header--title\">{{ title() }}</p>\r\n  <p class=\"storybook-section-header--description\">{{ description() }}</p>\r\n</div>\r\n"
+        },
+        {
+            "name": "ServiceCardComponent",
+            "id": "component-ServiceCardComponent-1a99bc7984b3eff81c6913810a3f235634b944a8674aade6b2a49eb9c56052494ba0584ee5169341cf9c7bc0464a874e969290ddd46f68ff64020f9c94130a61",
+            "file": "src/app/components/shared/service-card/service-card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-service-card",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./service-card.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "description",
+                    "defaultValue": "input<string>(\r\n    'Transforming data into actionable insights. Transforming data into actionable insights.Transforming data into actionable insights. Transforming data into actionable insights. Transforming data into actionable insights. Transforming data into actionable insights.'\r\n  )",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "logoUrl",
+                    "defaultValue": "input<string>('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "input<string>('Data Analytics & Visualization')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "ParagraphComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, input } from '@angular/core';\r\nimport { ParagraphComponent } from '../paragraph/paragraph.component';\r\n\r\n@Component({\r\n  selector: 'app-service-card',\r\n  standalone: true,\r\n  imports: [ParagraphComponent],\r\n  templateUrl: './service-card.component.html',\r\n  styleUrl: './service-card.component.less',\r\n})\r\nexport class ServiceCardComponent {\r\n  logoUrl = input<string>('');\r\n  title = input<string>('Data Analytics & Visualization');\r\n  description = input<string>(\r\n    'Transforming data into actionable insights. Transforming data into actionable insights.Transforming data into actionable insights. Transforming data into actionable insights. Transforming data into actionable insights. Transforming data into actionable insights.'\r\n  );\r\n}\r\n",
+            "styleUrl": "./service-card.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"storybook-service-card\">\r\n  <div class=\"storybook-service-card__inner\">\r\n    <div class=\"storybook-service-card__inner--logo\">\r\n      <img [src]=\"logoUrl()\" alt=\"\" />\r\n    </div>\r\n    <div class=\"storybook-service-card__inner--title\">{{ title() }}</div>\r\n    <div class=\"storybook-service-card__inner--description\">\r\n      <app-paragraph [paragraphText]=\"description()\"></app-paragraph>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "TextAreaComponent",
+            "id": "component-TextAreaComponent-093804283e460d85b7b9abb088fea0a5e7ea8464377304e5ca945b885aa0797c9d062f932aa60a2dd90539395d98b2a93d965bdbef64b49a18bc470fe87cb910",
+            "file": "src/app/components/shared/text-area/text-area.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-text-area",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./text-area.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-text-area',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './text-area.component.html',\r\n  styleUrl: './text-area.component.less'\r\n})\r\nexport class TextAreaComponent {\r\n\r\n}\r\n",
+            "styleUrl": "./text-area.component.less",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p>text-area works!</p>\r\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\r\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideAnimationsAsync()]\r\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\r\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideAnimationsAsync()]\r\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/pages/about-section/about-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AboutSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/pages/contact-section/contact-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ContactSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/pages/footer/footer.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FooterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/pages/hero-section/hero-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeroSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/pages/nav-bar/nav-bar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NavBarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/shared/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/shared/input-field/input-field.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputFieldComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/shared/links/links.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LinksComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/shared/paragraph/paragraph.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ParagraphComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/shared/projects-card/projects-card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ProjectsCardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/shared/section-header/section-header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SectionHeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/shared/service-card/service-card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ServiceCardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/shared/text-area/text-area.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TextAreaComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

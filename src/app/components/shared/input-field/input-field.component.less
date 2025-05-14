@@ -1,0 +1,32 @@
+.input-field {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-weight: var(--font-weight-bold);
+  }
+
+  input {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-bg-color);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-bold);
+    color: var(--card-bg-dark);
+    width: 100%;
+    box-sizing: border-box;
+
+    &::placeholder {
+      font-weight: var(--font-weight-normal);
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid var(--card-border-color);
+      box-shadow: none;
+    }
+  }
+}

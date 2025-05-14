@@ -1,0 +1,13 @@
+<div class="nav-bar">
+  <div class="nav-bar__inner">
+    @for (link of navItems(); track $index) {
+    <app-nav-links
+      [title]="link.title"
+      [hyperLink]="link.hyperLink"
+      [isActive]="link.isActive"
+      [fontSize]="fontSize"
+      (linkClicked)="routeChanged($index)"
+    ></app-nav-links>
+    }
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="about-section">
+  <app-section-header
+    [title]="sectionTitle"
+    [description]="sectionDescription"
+  ></app-section-header>
+
+  <div class="about-section__content">
+    <app-paragraph [paragraphText]="paragraphText[0]"></app-paragraph>
+    <app-paragraph [paragraphText]="paragraphText[1]"></app-paragraph>
+    <app-paragraph [paragraphText]="paragraphText[2]"></app-paragraph>
+  </div>
+
+  <div class="about-section__button">
+    <app-button
+      [title]="buttonData.title"
+      [type]="buttonData.type"
+      [width]="buttonData.width"
+      [height]="buttonData.height"
+      [widthUnits]="buttonData.widthUnits"
+      [heightUnits]="buttonData.heightUnits"
+    ></app-button>
+  </div>
+</div>

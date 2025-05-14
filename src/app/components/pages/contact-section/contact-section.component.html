@@ -1,0 +1,49 @@
+<div class="contact-form">
+  <app-section-header
+    [title]="title()"
+    [description]="description()"
+  ></app-section-header>
+
+  <div class="contact-form__sections">
+    <div>
+      <app-input-field
+        [title]="nameData.title"
+        [placeholder]="nameData.placeholder"
+        [width]="nameData.width"
+        [widthUnits]="nameData.widthUnits"
+        [height]="nameData.height"
+        [heightUnits]="nameData.heightUnits"
+        type="text"
+      ></app-input-field>
+
+      <app-input-field
+        [title]="emailData.title"
+        [placeholder]="emailData.placeholder"
+        [width]="emailData.width"
+        [widthUnits]="emailData.widthUnits"
+        [height]="emailData.height"
+        [heightUnits]="emailData.heightUnits"
+        type="email"
+      ></app-input-field>
+
+      <app-text-area
+        [title]="messageData.title"
+        [placeholder]="messageData.placeholder"
+        [width]="messageData.width"
+        [widthUnits]="messageData.widthUnits"
+        [height]="messageData.height"
+        [heightUnits]="messageData.heightUnits"
+        type="text"
+      ></app-text-area>
+    </div>
+  </div>
+
+  <app-button
+    [title]="buttonData.title"
+    [type]="buttonData.type"
+    [width]="buttonData.width"
+    [height]="buttonData.height"
+    [widthUnits]="buttonData.widthUnits"
+    [heightUnits]="buttonData.heightUnits"
+  ></app-button>
+</div>
